@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/api/sample")
-@RefreshScope
+@RefreshScope // if any property changes, by the help of this Annotation it will load from the server again.
 public class SampleController {
 
     @Value("${msg: Sudhakar}")

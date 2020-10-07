@@ -4,7 +4,7 @@ management:
   endpoints:
           web:
             exposure:
-                include: refresh
+                include: refresh # Exposing the Actuator end point to refresh if any value changed
 spring:
   profiles:
-    active: dev
+    active: dev # profile name which is being used to fetch the details

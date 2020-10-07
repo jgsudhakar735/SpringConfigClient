@@ -1,8 +1,9 @@
 spring:
   application:
-    name: jgsudhakar-services
+    name: jgsudhakar-services #properties default name , This is generally before profile name
   cloud:
     config:
-      uri: http://localhost:8888
+      uri: http://localhost:8888 # Config Server url where it is running. If that server running with context mention
+      label: main #branch name of the repository
   profiles:
-    active: dev
+    active: dev # profile name of the file which you saved
